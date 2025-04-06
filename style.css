@@ -8,30 +8,12 @@ body {
     text-align: center;
     
 }
- .container {
-      display: flex;
-      padding: 20px;
-      background-color: lightblue;
-      justify-content: space-between;
-    }
-
-    .box {
-      width: 30%;
-      background-color: white;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
+ 
  @media (max-width: 768px) {
       .container {
         flex-direction: column;
         gap: 20px;
         padding: 10px;
-      }
-
-      .box {
-        width: 100%;
       }
 
 header {
