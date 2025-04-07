@@ -53,7 +53,7 @@ body {
     text-decoration: none;
     font-weight: bold;
   }
-header h1 a ul {
+header h1 a ul li {
     color: black;
 }
 
