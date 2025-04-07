@@ -42,9 +42,7 @@ body {
     margin-left: 20px;
     transition: font-size 0.3s ease;
   }
-header h1 ul li{
-    color: black;
-}
+
   
   header.shrink h1 {
     font-size: 18px;
@@ -55,6 +53,9 @@ header h1 ul li{
     text-decoration: none;
     font-weight: bold;
   }
+header h1 a ul {
+    color: black;
+}
 
   
   .search-container {
