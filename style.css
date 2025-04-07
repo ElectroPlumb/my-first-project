@@ -53,16 +53,12 @@ body {
     font-weight: bold;
   }
   
-  .search-container {
-    display: flex;
-    align-items: center;
-    background: rgb(77, 80, 64);
-    padding: 8px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: relative;
-    margin-right: 20px;
+  .search-box{
+    width: 200px;
+    padding: 5px;
+    margin: 10px 10px; 
+    border-radius: 5px;
+    margin-left: 25px; 
   }
   
   .search-container .search-icon {
