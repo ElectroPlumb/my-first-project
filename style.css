@@ -169,6 +169,33 @@ header h1 a ul li {
     background: #130b09;
     transform: scale(1.1);
   }
+ * {
+      box-sizing: border-box;
+    }
+    .slider-container {
+      width: 100%;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      gap: 16px;
+      padding: 16px;
+    }
+   .slide {
+      flex: 0 0 auto;
+      width: 80%;
+      max-width: 300px;
+      height: 200px;
+      background-color: #ddd;
+      border-radius: 12px;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+   }
+ .slider-container::-webkit-scrollbar {
+      display: none;
+ }
   
   /* Services */
   #services {
