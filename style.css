@@ -320,6 +320,17 @@ body {
         grid-template-columns: 1fr;
       }
     }
+    @media (max-width: 600px){
+      .slider{
+        height: auto;
+      }
+    }
+    .slides img{
+      height: auto;
+
+    }
+    
+    
       
   
     section {
