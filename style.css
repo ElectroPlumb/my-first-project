@@ -18,7 +18,7 @@ body {
   
   /* Header */
   * Header */
-  .header {
+  header {
     background-color: blue;
     color: white;
     display: flex;
