@@ -64,7 +64,7 @@ body {
   .search-container .search-icon {
     width: 15px;
     height: 15px;
-    margin-left: 5px;
+    margin-left: 25px;
     color: black;
     cursor: pointer;
   }
@@ -72,9 +72,11 @@ body {
   input[type="text"] {
     padding: 8px;
     margin-top: 10px;
-    width: 250px;
+    width: 150px;
     border-radius: 10px;
     border: 1px solid #ccc;
+    border-left: 25px;
+    margin-left: 35px;
   }
   
   /* Navigation */
