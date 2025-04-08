@@ -22,28 +22,20 @@ body {
   }
   
   header {
-    background-color: blue;
-    color: white;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: padding 0.3s ease;
-  }
+  background-color: #ffeb3b; /* bright yellow */
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+header h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
   
   header.shrink {
     padding: 5px 15px;
-  }
-  
-  header h1 {
-    margin-left: 20px;
-    transition: font-size 0.3s ease;
   }
   
   header.shrink h1 {
@@ -65,28 +57,25 @@ nav {
   background-color: #333;
   padding: 10px 20px;
 }
-
-/* UL styles */
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column; /* Mobile first */
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
-
 /* LI and Anchor styles */
 nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 18px;
-  padding: 10px;
-  display: block;
+  padding: 8px 12px;
   border-radius: 8px;
   transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: red;
 }
 
 /* Responsive for larger screens */
@@ -110,6 +99,7 @@ nav ul li a:hover {
   background-color: white;
   border-radius: 5px;
   overflow: hidden;
+  justify-content: flex-end;
 }
 .search-box input {
   width: 100%;
@@ -391,25 +381,5 @@ nav ul li a:hover {
       display: block;
     }
   
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    nav ul {
-      text-align: left;
-      padding-left: 20px;
-    }
-  
-    .search-container {
-      margin-top: 10px;
-      width: 100%;
-      justify-content: space-between;
-    }
-  
-    input[type="text"] {
-      width: 100%;
-    }
-  }
 
         
