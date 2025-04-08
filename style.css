@@ -25,7 +25,7 @@ body {
   background-color: #ffeb3b; /* bright yellow */
   padding: 15px 20px;
   display: flex;
-  flex-direction: column;
+  flex-direction: inline;
   gap: 15px;
 }
 header h1 {
