@@ -396,12 +396,7 @@ nav ul li a:hover {
     main {
   padding-top: 120px;
 }
-@media (min-width: 768px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
+
   
 
         
