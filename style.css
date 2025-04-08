@@ -78,9 +78,9 @@ nav ul {
 }
 /* LI and Anchor styles */
 nav ul li a {
-  background-color: yellow;
+  background-color: yellow; !important;
   text-decoration: none;
-  color: black;
+  color: black; !important;
   font-size: 18px;
   padding: 8px 12px;
   border-radius: 8px;
