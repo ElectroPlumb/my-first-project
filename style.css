@@ -53,6 +53,9 @@ nav ul {
   justify-content: center;
   flex-wrap: wrap;
 }
+ nav ul li {
+            display: inline-block;
+        }
 
 nav ul li a {
   background-color: yellow;
