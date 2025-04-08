@@ -104,14 +104,14 @@ body {
   }
   
   nav ul li a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease-in-out;
   }
   
   nav ul li a:hover {
-    color: #ffcc00;
+    color: red;
   }
   .slider{
     width: 100%;
