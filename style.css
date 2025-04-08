@@ -25,7 +25,7 @@ body {
   background-color: #ffeb3b; /* bright yellow */
   padding: 15px 20px;
   display: flex;
-  flex-direction: inline;
+  flex-direction: column;
   gap: 15px;
 }
 header h1 {
@@ -60,9 +60,12 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 10px;
+   justify-content: center;
+  flex-wrap: wrap;
+  
 }
 /* LI and Anchor styles */
 nav ul li a {
@@ -98,16 +101,18 @@ nav ul li a:hover {
   align-items: center;
   background-color: white;
   border-radius: 5px;
-  overflow: hidden;
   justify-content: flex-end;
+   gap: 8px;
+  flex-wrap: wrap;
 }
 .search-box input {
-  width: 100%;
+  width: 80%;
   border: none;
-  padding:  0.5rem 0.5rem 0.5rem 2rem;
+  padding:  8px 12px;
   outline: none;
   font-size: 1rem;
   border-radius: 20px;
+  max-width: 300px;
     
 }
 
