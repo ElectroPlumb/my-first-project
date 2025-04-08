@@ -78,9 +78,9 @@ nav ul {
 }
 /* LI and Anchor styles */
 nav ul li a {
-  background-color: yellow !important; 
+  background-color: yellow; 
   text-decoration: none;
-  color: black !important; 
+  color: black; 
   font-size: 18px;
   padding: 8px 12px;
   border-radius: 8px;
@@ -88,7 +88,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: red !important;
+  background-color: red;
 }
 
 /* Responsive for larger screens */
