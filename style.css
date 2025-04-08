@@ -62,6 +62,50 @@ body {
   font-weight: bold;
 }
 
+/* Nav styles */
+nav {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+/* UL styles */
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Mobile first */
+  gap: 10px;
+}
+
+/* LI and Anchor styles */
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Responsive for larger screens */
+@media (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+
+
 .search-box {
   display: flex;
   align-items: center;
@@ -89,30 +133,12 @@ body {
   transition: background-color 0.3s ease;
 }
   
-  /* Navigation */
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
+
 .search-box button:hover {
   background-color: #2563eb; /* darker blue */
 }
   
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  nav ul li a:hover {
-    color: red;
-  }
+
   .slider{
     width: 100%;
     max-width: 350px;
