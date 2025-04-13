@@ -8,6 +8,7 @@
        
      <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script defer src="slider.js"></script>
 
 </head>
 <body>
@@ -35,18 +36,36 @@
         <br>
         <div class="slider">
             <div class="slides">
-                <img src="product6.jpg" alt="basin mixer">
-                <img src="product1.jpg" alt="basin mixer">
-                <img src="product2.jpg" alt="basin mixer">
-                <img src="product3.jpg" alt="basin mixer">
-                <img src="product2.jpg" alt="basin mixer">
-                <img src="product4.jpg" alt="basin mixer">
-            </div>  
-        
-        
-        <marquee direction="left">welcome to our store.we acite 24 hours.we active here for ur service. </marquee>
+                <img src="product6.jpg">
+                <img src="product1.jpg">
+                <img src="product2.jpg">
+                <img src="product3.jpg">
+                <img src="product2.jpg">
+                <img src="product4.jpg">
+            </div>
+           
+         </section>
 
-    </section>
+    <script>
+    let slideIndex = 0;
+const slides = document.querySelectorAll('.slides img');
+
+function showSlides() {
+    slides.forEach((slide, i) => {
+        slide.style.display = 'none';
+    });
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex - 1].style.display = 'block';
+    setTimeout(showSlides, 3000); // Change every 3s
+}
+document.addEventListener("DOMContentLoaded", showSlides);
+</script>
+<br>
+<div>
+    <marquee direction="left">welcome to our store.we acite 24 hours.we active here for ur service. </marquee>  
+</div> 
+
 
     <section id="products">
         <h2>Our Products</h2>
@@ -124,6 +143,25 @@
 
 
     </section>
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+        
+        <div class="review">
+            <img src="customer1.jpg" alt="Customer Photo">
+            <div class="review-content">
+       
+            <p>⭐️⭐️⭐️⭐️ "Fast delivery and great quality.</p>
+            </div>
+
+        </div>
+        <div class="review">
+            <img src="customer2.jpg" alt="Customer photo">
+            <p>⭐️⭐️⭐️⭐️⭐️ "Tanim is a good sales man.i like this store.everything is available in the store and it,s a trustable store - Fatima</p>
+        </div>
+    </div>
+        
+    </section>
+    
 
     <section id="services">
         <h2>Our Plumbing Services</h2>
@@ -208,3 +246,4 @@
 
 </body>
 </html>
+
