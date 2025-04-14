@@ -30,18 +30,6 @@
     <i class="fas fa-search"></i>
 </div>
 
-<div class="product-grid">
-    <div class="product-card">
-        <h3 class="product-name">led bulb</h3>
-    </div>
-    <div class="product-card">
-        <h3 class="product-name">basin mixer</h3>
-    </div>
-    <div class="product-card">
-        <h3 class="product-name">pipe wrench</h3>
-    </div>
-</div>
-
 
         
     </header>
@@ -280,28 +268,7 @@ document.addEventListener("DOMContentLoaded", showSlides);
         </div>
         
     </footer>
-       <script>
-  const searchInput = document.getElementById("searchInput");
-  const productCards = document.querySelectorAll(".product-card");
-
-  searchInput.addEventListener("input", function () {
-    const query = searchInput.value.toLowerCase();
-
-    productCards.forEach(card => {
-      const productName = card.querySelector(".product-name").textContent.toLowerCase();
-      if (productName.includes(query)) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
-</script>
-
-     
-            
-        
-
+       
 </body>
 </html>
 
