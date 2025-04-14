@@ -628,3 +628,16 @@ footer a {
 .cart-items button:hover {
   background: #1eaf57;
 }
+@media (max-width: 600px) {
+  .whatsapp-button,
+  .cart-btn {
+    right: 10px;     /* Keep it inside screen */
+    bottom: 15px;    /* Don't push too low */
+    transform: none; /* Remove scale transforms if any */
+  }
+
+  .cart-btn {
+    bottom: 80px;
+  }
+}
+
