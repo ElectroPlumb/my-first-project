@@ -26,16 +26,22 @@
             </ul>
         </nav>
         <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Search for products...">
+    <input type="text" id="searchInput" placeholder="Search for products..." />
     <i class="fas fa-search"></i>
 </div>
 
 <div class="product-grid">
-    <div class="product">LED Bulb.china deep plustic cover</div>
-    <div class="product">basin mixer</div>
-    <div class="product">basin mixer</div>
-    <div class="product">Pipe Wrench</div>
+    <div class="product-card">
+        <h3 class="product-name">led bulb</h3>
+    </div>
+    <div class="product-card">
+        <h3 class="product-name">basin mixer</h3>
+    </div>
+    <div class="product-card">
+        <h3 class="product-name">pipe wrench</h3>
+    </div>
 </div>
+
 
         
     </header>
@@ -276,17 +282,22 @@ document.addEventListener("DOMContentLoaded", showSlides);
     </footer>
        <script>
   const searchInput = document.getElementById("searchInput");
-  const products = document.querySelectorAll(".product");
+  const productCards = document.querySelectorAll(".product-card");
 
   searchInput.addEventListener("input", function () {
-    const searchText = searchInput.value.toLowerCase();
+    const query = searchInput.value.toLowerCase();
 
-    products.forEach(product => {
-      const productName = product.textContent.toLowerCase();
-      product.style.display = productName.includes(searchText) ? "block" : "none";
+    productCards.forEach(card => {
+      const productName = card.querySelector(".product-name").textContent.toLowerCase();
+      if (productName.includes(query)) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
     });
   });
 </script>
+
      
             
         
