@@ -232,32 +232,8 @@ document.addEventListener("DOMContentLoaded", showSlides);
                 <button type="submit">Send Message</button>
             </div>
         </form>
-    </section>
-    <!-- WhatsApp Button -->
-<a href="https://wa.me/966571125075" class="whatsapp-button" target="_blank" title="Chat with us!">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-  <!-- Cart Button -->
-<!-- Cart Button -->
-     <div class="cart-btn" onclick="toggleCart()">
     
-
-    <i class="fas fa-shopping-cart"></i>
-    <span class="cart-count">0</span>
-  </div>
-  
-  <!-- Cart Sidebar -->
-  <div class="cart-sidebar" id="cartSidebar">
-    <h3>Your Cart</h3>
-    <ul class="cart-items">
-      <!-- Cart items will go here -->
-      <li>No items yet!</li>
-    </ul>
-    <button onclick="toggleCart()">Close</button>
-  </div>
-  
-  
-  </body>
+    </body>
   </html>
   
     
@@ -285,70 +261,6 @@ document.addEventListener("DOMContentLoaded", showSlides);
         </div>
         
     </footer>
-    <script>
-        function toggleCart() {
-          document.getElementById("cartSidebar").classList.toggle("active");
-        }
-        </script>
-        <script>
-            let cart = [];
-            
-            function addToCart(name, price) {
-              const existingItem = cart.find(item => item.name === name);
-              if (existingItem) {
-                existingItem.qty += 1;
-              } else {
-                cart.push({ name, price, qty: 1 });
-              }
-              updateCartUI();
-            }
-            
-            function updateCartUI() {
-              const cartSidebar = document.getElementById("cartSidebar");
-              const cartItemsList = cartSidebar.querySelector(".cart-items");
-              const cartCount = document.querySelector(".cart-count");
-              
-              // Clear old list
-              cartItemsList.innerHTML = '';
-            
-              if (cart.length === 0) {
-                cartItemsList.innerHTML = '<li>Your cart is empty!</li>';
-                cartCount.textContent = '0';
-                return;
-              }
-            
-              cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
-            
-              cart.forEach((item, index) => {
-                const li = document.createElement("li");
-                li.innerHTML = `
-                  <strong>${item.name}</strong> <br>
-                  Price: ${item.price} × ${item.qty} = ${item.price * item.qty} SAR
-                  <div>
-                    <button onclick="changeQty(${index}, 1)">+</button>
-                    <button onclick="changeQty(${index}, -1)">-</button>
-                    <button onclick="removeItem(${index})">Remove</button>
-                  </div>
-                `;
-                cartItemsList.appendChild(li);
-              });
-            }
-            
-            function toggleCart() {
-              document.getElementById("cartSidebar").classList.toggle("active");
-            }
-            
-            function changeQty(index, delta) {
-              cart[index].qty += delta;
-              if (cart[index].qty <= 0) cart.splice(index, 1);
-              updateCartUI();
-            }
-            
-            function removeItem(index) {
-              cart.splice(index, 1);
-              updateCartUI();
-            }
-            </script>
             
         
 
