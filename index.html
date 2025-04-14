@@ -26,9 +26,17 @@
             </ul>
         </nav>
         <div class="search-box">
-            <input type="text" placeholder="Search for products...">
-            <i class="fas fa-search"></i>
-        </div>
+    <input type="text" id="searchInput" placeholder="Search for products...">
+    <i class="fas fa-search"></i>
+</div>
+
+<div class="product-grid">
+    <div class="product">LED Bulb.china deep plustic cover</div>
+    <div class="product">basin mixer</div>
+    <div class="product">basin mixer</div>
+    <div class="product">Pipe Wrench</div>
+</div>
+
         
     </header>
     
@@ -266,6 +274,20 @@ document.addEventListener("DOMContentLoaded", showSlides);
         </div>
         
     </footer>
+       <script>
+  const searchInput = document.getElementById("searchInput");
+  const products = document.querySelectorAll(".product");
+
+  searchInput.addEventListener("input", function () {
+    const searchText = searchInput.value.toLowerCase();
+
+    products.forEach(product => {
+      const productName = product.textContent.toLowerCase();
+      product.style.display = productName.includes(searchText) ? "block" : "none";
+    });
+  });
+</script>
+     
             
         
 
